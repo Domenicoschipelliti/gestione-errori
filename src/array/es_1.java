@@ -8,37 +8,29 @@ public class es_1  {
 
 
 
+    public  int[] ray(){
 
-     public  int[] ray(){
-
-
-
-            ar[0]=numeri;
-            ar[1]=numeri;
-            ar[2]=numeri;
-            ar[3]=numeri;
-            ar[4]=numeri;
-
-            System.out.println(ar[2]);//stampa valori;
-            Scanner num=new Scanner(System.in);
+        ar[0]=numeri;
+        ar[1]=numeri;
+        ar[2]=numeri;
+        ar[3]=numeri;
+        ar[4]=numeri;
 
 
-          try {
-              System.out.println("dimmi un numero da posizionare nell'array(specifica anche dove): ");
-              num.nextLine();
-          }catch (Exception exception){
-              System.out.println("errore nella scelta del numero");
-              num.nextLine();
-          }finally {
-              num.close();
-          }
+      for (int i=0;i<ar.length;i++){
+          System.out.println(ar[i]);
+
+      }
+
+
+
+        return ar;
+    }
 
 
 
 
 
 
-         return ar;
-     }
 
 }
