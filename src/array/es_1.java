@@ -3,7 +3,7 @@ package array;
 import java.util.Scanner;
 
 public class es_1  {
-    public int numeri=(int)(Math.random()*10+1);
+    public int numeri=(int)((Math.random()*10)+1);
    public int[] ar=new int[5];//dichiarazione e fissazione di un array;
 
 
