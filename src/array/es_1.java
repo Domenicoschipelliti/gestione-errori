@@ -22,6 +22,33 @@ public class es_1  {
 
       }
 
+      Scanner po=new Scanner(System.in);
+
+      int modifica;
+      int posizione;
+
+       System.out.println("dimmi un numero che vuoi modificare: ");
+       modifica=po.nextInt();
+       po.nextLine();
+       System.out.println("la sua posizione");
+       posizione=po.nextInt();
+       po.nextLine();
+
+       ar[posizione]=modifica;
+        po.nextLine();
+
+
+
+        for (int i=0;i<ar.length;i++){
+            System.out.println(ar[i]);
+
+        }
+
+        po.close();
+
+
+
+
 
 
         return ar;
