@@ -26,23 +26,32 @@ public class es_1  {
 
       int modifica;
       int posizione;
+        System.out.println("dimmi un numero che vuoi modificare: ");
+        modifica=po.nextInt();
+        po.nextLine();
+        System.out.println("la sua posizione");
+        posizione=po.nextInt();
+        po.nextLine();
 
-       System.out.println("dimmi un numero che vuoi modificare: ");
-       modifica=po.nextInt();
-       po.nextLine();
-       System.out.println("la sua posizione");
-       posizione=po.nextInt();
-       po.nextLine();
-
-       ar[posizione]=modifica;
+        ar[posizione]=modifica;
         po.nextLine();
 
 
 
-        for (int i=0;i<ar.length;i++){
-            System.out.println(ar[i]);
+      try {
+          for (int i=0;i<ar.length;i++){
+              System.out.println(ar[i]);
 
-        }
+          }
+      }catch (Exception ex){
+          System.err.println(ex.getMessage());
+      }
+
+
+
+
+
+
 
         po.close();
 
